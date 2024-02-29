@@ -8,25 +8,13 @@
     <title>Validar RFC</title>
 </head>
 <body>
-    <h6>221193 - Francisco de Jesus Escobar Gutierrez.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        7°A.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IS.</h6>
-    <h1>Validar CURP 4 Letras con 2 expresiones</h2>
     
-    <div class="container">
-        <!-- <div class="er1">
-            <h2>Primer Expresión</h2>
-            <label for="cadenaInput">Ingrese una cadena de 4 letras:</label>
-            <div class="wrapper_input">
-                <input type="text" id="cadenaInput" maxlength="4">
-            <button onclick="validarYMostrar()">Validar</button>
-            </div>
-            
-            <p id="resultado"></p>
-        </div> -->
-    
+    <div style="margin: auto; width: 50%; text-align: center;">
+        <h1>RFC</h2>
+
+        
         <div class="er2">
-            <h2>Dos Expresiones en una</h2>
-            <label for="cadenaInput2">Ingrese una cadena de E(ogf)*:</label>
+            <label for="cadenaInput2">Ingrese una cadena de J(ien)*:</label>
             <div class="wrapper_input">
                 <input type="text" id="cadenaInput2" >
             <button onclick="validarYMostrarSegundaER()">Validar</button>
@@ -35,13 +23,15 @@
             <p id="resultado2"></p>
         </div>
     </div>
+    </div>
 
     <script type="module">
-        import { validarYMostrar } from "./primerER.js";
-        import { validarYMostrarSegundaER } from "./segundaER.js";
+        import { validateAndDisplay as validateAndDisplayFirstER } from "./primera.js";
+        import { validateAndShowSecondER as validateAndShowSecondER } from "./segunda.js";
 
-        window.validarYMostrar = validarYMostrar;
-        window.validarYMostrarSegundaER = validarYMostrarSegundaER;
+        window.validateAndDisplayFirstER = validateAndDisplayFirstER;
+        window.validateAndShowSecondER = validateAndShowSecondER;
+
     </script>
 </body>
 </html>
